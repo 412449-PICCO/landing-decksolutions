@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Deck Solutions | Cubre Piscinas Transitables a Medida — Mar del Plata</title>
-<meta name="description" content="Fabricamos e instalamos cubre piscinas tipo deck de madera, 100% transitables y corredizos. Estructura de acero inoxidable y deck de eucalipto o Grandis, hechos a medida en Mar del Plata.">
+<title>Deck Solutions | Cubre Piscinas Transitables a Medida — Córdoba</title>
+<meta name="description" content="Fabricamos e instalamos cubre piscinas tipo deck de madera, 100% transitables y corredizos. Estructura de acero inoxidable y deck de eucalipto o Grandis, hechos a medida en Córdoba Capital.">
 <meta name="theme-color" content="#000000">
 <meta name="author" content="Deck Solutions">
 <meta name="robots" content="index, follow">
@@ -15,23 +15,20 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_AR">
 <meta property="og:site_name" content="Deck Solutions">
-<meta property="og:title" content="Deck Solutions | Cubre Piscinas Transitables a Medida — Mar del Plata">
+<meta property="og:title" content="Deck Solutions | Cubre Piscinas Transitables a Medida — Córdoba">
 <meta property="og:description" content="Mucho más que un cubre piscinas: 100% transitable, estético y seguro. Fabricado a medida de tu pileta.">
 <meta property="og:url" content="https://decksolutions.com.ar/">
-<!-- FOTO: hero de noche, deck instalado con luz cálida en la pared (1200x630) -->
-<meta property="og:image" content="assets/hero.jpg">
+<meta property="og:image" content="assets/deck-noche.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Deck Solutions | Cubre Piscinas Transitables a Medida">
-<meta name="twitter:description" content="Deck cubre piscinas transitables y corredizos, hechos a medida en Mar del Plata.">
-<meta name="twitter:image" content="assets/hero.jpg">
+<meta name="twitter:description" content="Deck cubre piscinas transitables y corredizos, hechos a medida en Córdoba Capital.">
+<meta name="twitter:image" content="assets/deck-noche.jpg">
 
-<!-- FOTO: logo circular dorado sobre negro -->
-<link rel="icon" href="assets/logo.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath d='M32 16 50 47H14z' fill='none' stroke='%23C9A227' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300..700&family=Fraunces:SOFT,WONK,opsz,wght@0..100,0..1,9..144,400..900&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -40,10 +37,10 @@
   "name": "Deck Solutions",
   "description": "Fabricación e instalación de cubre piscinas tipo deck de madera, transitables y corredizos.",
   "slogan": "Espacios que suman vida",
-  "image": "assets/hero.jpg",
-  "telephone": "+5492231234567",
-  "address": { "@type": "PostalAddress", "addressLocality": "Mar del Plata", "addressRegion": "Buenos Aires", "addressCountry": "AR" },
-  "areaServed": "Mar del Plata, Buenos Aires, Argentina",
+  "image": "assets/deck-noche.jpg",
+  "telephone": "+5493515090542",
+  "address": { "@type": "PostalAddress", "addressLocality": "Córdoba", "addressRegion": "Córdoba", "addressCountry": "AR" },
+  "areaServed": "Córdoba Capital y alrededores, Argentina",
   "openingHours": ["Mo-Fr 09:00-19:00", "Sa 09:00-13:00"],
   "sameAs": ["https://instagram.com/decksolutions"]
 }
@@ -71,6 +68,8 @@
   --nav-h:86px;
   --max:1240px;
   --pad:clamp(20px,5vw,64px);
+  --display:'Fraunces',ui-serif,Georgia,'Times New Roman',serif;
+  --ui:'Archivo','Helvetica Neue',Helvetica,Arial,sans-serif;
   --ease:cubic-bezier(.22,.61,.36,1);
   --t:300ms var(--ease);
   --sombra:0 20px 48px -24px rgba(0,0,0,.85);
@@ -85,7 +84,7 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
   background:var(--negro);
   color:var(--blanco);
-  font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-family:var(--ui);
   font-weight:400;
   font-size:16px;
   line-height:1.7;
@@ -115,7 +114,7 @@ section{position:relative;scroll-margin-top:var(--nav-h)}
 .bg-gris{background:var(--gris-oscuro)}
 
 .eyebrow{
-  font-family:'Montserrat',sans-serif;font-weight:700;
+  font-family:var(--ui);font-weight:700;
   font-size:clamp(11px,1.1vw,13px);letter-spacing:.25em;text-transform:uppercase;
   color:var(--dorado);display:flex;align-items:center;gap:14px;margin-bottom:22px;
 }
@@ -123,9 +122,13 @@ section{position:relative;scroll-margin-top:var(--nav-h)}
 .eyebrow.center{justify-content:center}
 .eyebrow.center::after{content:"";width:34px;height:1px;background:var(--dorado);opacity:.7;flex:none}
 
-h1,h2,h3,h4{font-family:'Montserrat',sans-serif;line-height:1.05;letter-spacing:-.015em}
-h2{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:800;line-height:1.08}
-h3{font-size:clamp(1.15rem,2vw,1.5rem);font-weight:800;letter-spacing:.02em}
+h1,h2{
+  font-family:var(--display);line-height:1.02;letter-spacing:-.02em;font-weight:700;
+  font-variation-settings:'SOFT' 12,'WONK' 1,'opsz' 120;
+}
+h3,h4{font-family:var(--ui);line-height:1.15;letter-spacing:-.005em}
+h2{font-size:clamp(2.1rem,4.6vw,3.6rem);font-weight:700;line-height:1.06}
+h3{font-size:clamp(1.15rem,2vw,1.5rem);font-weight:700;letter-spacing:.02em}
 p{color:var(--gris-texto)}
 .lead{font-size:clamp(15px,1.35vw,18px);max-width:62ch}
 
@@ -138,7 +141,7 @@ p{color:var(--gris-texto)}
 /* Botones */
 .btn{
   display:inline-flex;align-items:center;gap:.7em;
-  font-family:'Montserrat',sans-serif;font-weight:800;
+  font-family:var(--ui);font-weight:700;
   font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
   padding:16px 30px;border-radius:999px;border:1px solid transparent;
   transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t),border-color var(--t);
@@ -177,9 +180,10 @@ p{color:var(--gris-texto)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
 
 .brand{display:flex;align-items:center;gap:13px;flex:none}
-.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid var(--linea);flex:none}
-.brand .name{font-family:'Montserrat',sans-serif;font-weight:900;font-size:15px;letter-spacing:.18em;line-height:1.1}
-.brand .tag{display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:8.5px;letter-spacing:.24em;color:var(--dorado);margin-top:3px}
+.marca{flex:none;width:46px;height:46px;color:var(--dorado);display:grid;place-items:center}
+.marca svg{width:100%;height:100%}
+.brand .name{font-family:var(--ui);font-weight:700;font-size:14.5px;letter-spacing:.2em;line-height:1.1}
+.brand .tag{display:block;font-family:var(--ui);font-weight:700;font-size:8.5px;letter-spacing:.24em;color:var(--dorado);margin-top:3px}
 
 .nav-links{display:flex;align-items:center;gap:38px}
 .nav-links a{
@@ -204,16 +208,16 @@ p{color:var(--gris-texto)}
   opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s;
 }
 .menu.open{opacity:1;visibility:visible}
-.menu a{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(26px,7vw,40px);letter-spacing:.02em;padding:12px 0;transition:color var(--t)}
-.menu a:hover{color:var(--dorado)}
+.menu a:not(.btn){font-family:var(--display);font-weight:700;font-size:clamp(30px,8vw,46px);letter-spacing:-.02em;padding:10px 0;transition:color var(--t);font-variation-settings:'SOFT' 0,'WONK' 1}
+.menu a:not(.btn):hover{color:var(--dorado)}
 .menu .btn{margin-top:26px}
-.menu .menu-foot{margin-top:34px;font-size:11px;letter-spacing:.24em;color:var(--dorado);font-family:'Montserrat',sans-serif;font-weight:700}
+.menu .menu-foot{margin-top:34px;font-size:11px;letter-spacing:.24em;color:var(--dorado);font-family:var(--ui);font-weight:700}
 
 @media (max-width:1000px){
   .nav-links,.nav .btn{display:none}
   .burger{display:flex}
   :root{--nav-h:74px}
-  .brand img{width:38px;height:38px}
+  .marca{width:40px;height:40px}
 }
 
 /* ============================================================
@@ -221,7 +225,7 @@ p{color:var(--gris-texto)}
    ============================================================ */
 .hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:var(--nav-h)}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
 .hero-bg::after{
   content:"";position:absolute;inset:0;
   background:linear-gradient(to bottom,rgba(0,0,0,.75),rgba(0,0,0,.55));
@@ -233,12 +237,12 @@ p{color:var(--gris-texto)}
 .hero .wrap{position:relative;z-index:3;width:100%}
 .hero-eyebrow{margin-bottom:26px}
 .hero h1{
-  font-size:clamp(3rem,10.5vw,7rem);font-weight:900;letter-spacing:-.02em;line-height:.95;
-  text-transform:uppercase;text-wrap:balance;
+  font-size:clamp(3.1rem,10.5vw,7.2rem);font-weight:800;letter-spacing:-.035em;line-height:.92;
+  text-transform:uppercase;text-wrap:balance;font-variation-settings:'SOFT' 0,'WONK' 1,'opsz' 144;
 }
 .hero h1 .l2{display:block}
 .hero .sub{
-  font-family:'Montserrat',sans-serif;font-weight:700;font-size:clamp(13px,1.6vw,17px);
+  font-family:var(--ui);font-weight:700;font-size:clamp(13px,1.6vw,17px);
   letter-spacing:.2em;text-transform:uppercase;color:var(--blanco);opacity:.92;margin-bottom:38px;
 }
 .hero .sub b{color:var(--dorado);font-weight:700}
@@ -247,7 +251,7 @@ p{color:var(--gris-texto)}
 .hero-words{
   position:absolute;top:0;right:var(--pad);bottom:0;z-index:3;
   display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:16px;
-  font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:.3em;
+  font-family:var(--ui);font-weight:700;font-size:11px;letter-spacing:.3em;
   text-transform:uppercase;color:var(--gris-texto);
 }
 .hero-words span{display:flex;align-items:center;gap:14px}
@@ -258,60 +262,21 @@ p{color:var(--gris-texto)}
 .scroll-ind{
   position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:4;
   display:flex;flex-direction:column;align-items:center;gap:10px;
-  font-family:'Montserrat',sans-serif;font-size:9.5px;font-weight:700;letter-spacing:.3em;color:var(--gris-texto);
+  font-family:var(--ui);font-size:9.5px;font-weight:700;letter-spacing:.3em;color:var(--gris-texto);
 }
 .scroll-ind i{display:block;width:1px;height:52px;background:linear-gradient(to bottom,var(--dorado),transparent);position:relative;overflow:hidden}
 .scroll-ind i::after{content:"";position:absolute;top:-52px;left:0;width:1px;height:52px;background:var(--dorado-claro);animation:drop 2.4s var(--ease) infinite}
 @keyframes drop{0%{transform:translateY(0)}70%,100%{transform:translateY(104px)}}
 
 /* ============================================================
-   6. REELS
-   ============================================================ */
-.reels{padding-block:clamp(56px,7vw,84px);border-block:1px solid var(--linea-suave)}
-.reels-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:34px;flex-wrap:wrap}
-.reels-head .eyebrow{margin-bottom:0}
-.reels-head p{font-size:13.5px}
-.reel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.reel{
-  position:relative;aspect-ratio:9/16;border-radius:16px;overflow:hidden;
-  border:1px solid var(--linea);background:var(--gris-oscuro);
-  transition:transform var(--t),border-color var(--t),box-shadow var(--t);
-}
-.reel video{width:100%;height:100%;object-fit:cover}
-.reel::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 55%);pointer-events:none}
-.reel:hover{transform:translateY(-5px);border-color:var(--dorado);box-shadow:0 24px 46px -26px rgba(0,0,0,.9)}
-.reel-play{
-  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;
-  width:62px;height:62px;border-radius:50%;background:var(--dorado);color:var(--negro);
-  display:grid;place-items:center;box-shadow:0 10px 26px -12px rgba(0,0,0,.9);
-  transition:transform var(--t),opacity var(--t);
-}
-.reel-play svg{margin-left:3px}
-.reel-play:hover{transform:translate(-50%,-50%) scale(1.09)}
-.reel.playing .reel-play{opacity:0;pointer-events:none}
-.reel-cap{
-  position:absolute;left:16px;right:16px;bottom:14px;z-index:3;
-  font-family:'Montserrat',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
-}
-@media (max-width:900px){
-  .reel-grid{
-    display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;
-    margin-inline:calc(var(--pad)*-1);padding-inline:var(--pad);padding-bottom:8px;
-    scrollbar-width:none;
-  }
-  .reel-grid::-webkit-scrollbar{display:none}
-  .reel{flex:0 0 62%;scroll-snap-align:center}
-}
-
-/* ============================================================
-   7. NOSOTROS + ACORDEÓN
+   6. NOSOTROS + ACORDEÓN
    ============================================================ */
 .nosotros-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,90px);align-items:start}
 .acc{border-top:1px solid var(--linea)}
 .acc-item{border-bottom:1px solid var(--linea)}
 .acc-q{
   width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left;
-  padding:22px 0;font-family:'Montserrat',sans-serif;font-weight:700;font-size:clamp(14px,1.5vw,16.5px);
+  padding:22px 0;font-family:var(--ui);font-weight:700;font-size:clamp(14px,1.5vw,16.5px);
   letter-spacing:.01em;transition:color var(--t);
 }
 .acc-q:hover{color:var(--dorado-claro)}
@@ -330,7 +295,7 @@ p{color:var(--gris-texto)}
 }
 
 /* ============================================================
-   8. BENEFICIOS
+   7. BENEFICIOS
    ============================================================ */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
 .card{
@@ -342,16 +307,16 @@ p{color:var(--gris-texto)}
 .card-ico{
   width:58px;height:58px;border-radius:50%;border:1px solid var(--linea);
   display:grid;place-items:center;color:var(--dorado);margin-bottom:26px;
-  transition:border-color var(--t),background var(--t),color var(--t);
+  transition:border-color var(--t),background var(--t),color var(--t),transform var(--t);
 }
-.card:hover .card-ico{border-color:var(--dorado)}
+.card:hover .card-ico{border-color:var(--dorado);transform:scale(1.07) rotate(-4deg)}
 .card h3{font-size:15px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:12px}
 .card p{font-size:14.2px}
 @media (max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:620px){.cards{grid-template-columns:1fr}}
 
 /* ============================================================
-   9. EL SISTEMA
+   8. EL SISTEMA
    ============================================================ */
 .step{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5.5vw,80px);align-items:center;position:relative}
 .step + .step{margin-top:clamp(70px,9vw,130px);padding-top:clamp(70px,9vw,130px);border-top:1px solid var(--linea-suave)}
@@ -359,7 +324,7 @@ p{color:var(--gris-texto)}
 .step-txt{position:relative;z-index:2}
 .step-num{
   position:absolute;top:-.42em;left:-.06em;z-index:-1;
-  font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(7rem,15vw,13rem);
+  font-family:var(--display);font-weight:800;font-variation-settings:'WONK' 1,'opsz' 144;font-size:clamp(7rem,15vw,13rem);
   line-height:1;color:rgba(201,162,39,.07);pointer-events:none;user-select:none;letter-spacing:-.04em;
 }
 .step h3{font-size:clamp(1.4rem,2.6vw,2rem);text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px}
@@ -371,22 +336,39 @@ p{color:var(--gris-texto)}
   flex:none;width:22px;height:22px;border-radius:50%;border:1px solid var(--linea);
   display:grid;place-items:center;color:var(--dorado);margin-top:4px;
 }
-.step-img{border-radius:18px;overflow:hidden;border:1px solid var(--linea);position:relative;box-shadow:var(--sombra)}
-.step-img img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 1.1s var(--ease)}
-.step-img:hover img{transform:scale(1.04)}
+/* esquema técnico dibujado (reemplaza fotos que no existen) */
+.esquema{
+  border:1px solid var(--linea-suave);border-radius:18px;background:#060606;
+  padding:clamp(20px,3vw,32px);
+}
+.esquema svg{width:100%;height:auto;display:block}
+.esquema figcaption{
+  display:flex;align-items:center;gap:10px;margin-bottom:20px;
+  font-family:var(--ui);font-weight:700;font-size:10px;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--dorado);
+}
+.esquema figcaption::before{content:"";width:22px;height:1px;background:var(--dorado);opacity:.7}
+.leyenda{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 22px;margin-top:26px;padding-top:24px;border-top:1px solid var(--linea-suave)}
+.leyenda li{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:start;font-size:12.5px;line-height:1.5;color:var(--gris-texto)}
+.leyenda b{color:var(--blanco);font-weight:500;display:block}
+.leyenda .num{
+  width:23px;height:23px;border-radius:50%;border:1px solid var(--linea);color:var(--dorado);
+  display:grid;place-items:center;font-family:var(--ui);font-weight:700;font-size:10px;margin-top:1px;
+}
+@media (max-width:520px){.leyenda{grid-template-columns:1fr}}
 
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .chip{
   border:1px solid var(--linea);border-radius:999px;padding:9px 20px;
-  font-family:'Montserrat',sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.16em;
+  font-family:var(--ui);font-weight:700;font-size:11.5px;letter-spacing:.16em;
   text-transform:uppercase;color:var(--dorado);transition:background var(--t),color var(--t);
 }
 .chip:hover{background:var(--dorado);color:var(--negro)}
 
 .figs{display:flex;gap:44px;margin-top:32px;flex-wrap:wrap}
-.fig .n{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(2.4rem,5vw,3.4rem);line-height:1}
+.fig .n{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,5.2vw,3.6rem);line-height:1;font-variation-settings:'SOFT' 0,'WONK' 1,'opsz' 144}
 .fig .n small{font-size:.38em;font-weight:800;letter-spacing:.04em}
-.fig .l{font-family:'Montserrat',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gris-texto);margin-top:6px}
+.fig .l{font-family:var(--ui);font-weight:700;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gris-texto);margin-top:6px}
 
 /* diagrama 3 pasos */
 .diagram{
@@ -398,8 +380,8 @@ p{color:var(--gris-texto)}
   transition:border-color var(--t),transform var(--t);
 }
 .dia-box:hover{border-color:var(--dorado);transform:translateY(-3px)}
-.dia-box .k{font-family:'Montserrat',sans-serif;font-weight:700;font-size:10px;letter-spacing:.24em;color:var(--dorado)}
-.dia-box .v{font-family:'Montserrat',sans-serif;font-weight:800;font-size:14.5px;letter-spacing:.02em;line-height:1.3}
+.dia-box .k{font-family:var(--ui);font-weight:700;font-size:10px;letter-spacing:.24em;color:var(--dorado)}
+.dia-box .v{font-family:var(--ui);font-weight:700;font-size:14.5px;letter-spacing:.02em;line-height:1.3}
 .dia-arrow{display:grid;place-items:center;color:var(--dorado);flex:none;font-size:22px}
 @media (max-width:760px){
   .dia-arrow{transform:rotate(90deg);padding-block:2px}
@@ -407,7 +389,7 @@ p{color:var(--gris-texto)}
   .dia-box{flex:1 1 auto}
 }
 .tri{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:38px}
-.tri h4{font-family:'Montserrat',sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--dorado);margin-bottom:9px}
+.tri h4{font-family:var(--ui);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--dorado);margin-bottom:9px}
 .tri p{font-size:14px}
 .cierre{
   margin-top:40px;padding:26px 30px;border-left:2px solid var(--dorado);background:rgba(201,162,39,.05);
@@ -415,14 +397,14 @@ p{color:var(--gris-texto)}
 }
 @media (max-width:900px){
   .step,.step.flip .step-txt{grid-template-columns:1fr;order:0}
-  .step-img{order:2}
+  .esquema{order:2}
   .tri{grid-template-columns:1fr;gap:22px}
 }
 
 /* ============================================================
-   10. GALERÍA
+   9. GALERÍA
    ============================================================ */
-.gal{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:200px;grid-auto-flow:dense;gap:16px;margin-top:52px}
+.gal{display:grid;grid-template-columns:1.02fr 1.48fr;grid-auto-rows:clamp(190px,23vw,290px);gap:16px;margin-top:52px}
 .gal-item{
   position:relative;overflow:hidden;border-radius:12px;border:1px solid var(--linea-suave);
   cursor:pointer;grid-row:span 1;
@@ -436,7 +418,7 @@ p{color:var(--gris-texto)}
 }
 .gal-cap{
   position:absolute;left:20px;right:20px;bottom:18px;z-index:2;
-  font-family:'Montserrat',sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.13em;
+  font-family:var(--ui);font-weight:700;font-size:11.5px;letter-spacing:.13em;
   text-transform:uppercase;opacity:0;transform:translateY(10px);
   transition:opacity var(--t),transform var(--t);
 }
@@ -444,8 +426,13 @@ p{color:var(--gris-texto)}
 .gal-item:hover img{transform:scale(1.07)}
 .gal-item:hover::after,.gal-item:hover .gal-cap{opacity:1;transform:none}
 .gal-item:hover{border-color:var(--dorado)}
-@media (max-width:900px){.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}}
-@media (max-width:560px){.gal{grid-template-columns:1fr;grid-auto-rows:230px}.gal-item.tall{grid-row:span 1}.gal-cap{opacity:1;transform:none}.gal-item::after{opacity:.9}}
+@media (max-width:820px){
+  .gal{grid-template-columns:1fr;grid-auto-rows:auto}
+  .gal-item{aspect-ratio:4/3;grid-row:auto}
+  .gal-item.tall{aspect-ratio:4/5}
+  .gal-cap{opacity:1;transform:none}
+  .gal-item::after{opacity:.92}
+}
 
 /* Lightbox */
 .lb{
@@ -455,7 +442,7 @@ p{color:var(--gris-texto)}
 }
 .lb.open{opacity:1;visibility:visible}
 .lb img{max-width:100%;max-height:82vh;border-radius:10px;border:1px solid var(--linea);object-fit:contain}
-.lb-cap{position:absolute;bottom:5vh;left:0;right:0;text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dorado);font-family:'Montserrat',sans-serif;font-weight:700}
+.lb-cap{position:absolute;bottom:5vh;left:0;right:0;text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dorado);font-family:var(--ui);font-weight:700}
 .lb-btn{
   position:absolute;width:52px;height:52px;border-radius:50%;border:1px solid var(--linea);
   display:grid;place-items:center;color:var(--dorado);background:rgba(0,0,0,.5);
@@ -468,7 +455,7 @@ p{color:var(--gris-texto)}
 @media (max-width:620px){.lb-prev{left:12px}.lb-next{right:12px}.lb-btn{width:44px;height:44px}}
 
 /* ============================================================
-   11. DESTACADO
+   10. DESTACADO
    ============================================================ */
 .split{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,6vw,84px);align-items:center}
 .split-img{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--linea);box-shadow:var(--sombra)}
@@ -477,13 +464,13 @@ p{color:var(--gris-texto)}
 .split-badge{
   position:absolute;left:22px;bottom:22px;z-index:2;background:rgba(0,0,0,.72);
   backdrop-filter:blur(8px);border:1px solid var(--linea);border-radius:999px;padding:10px 20px;
-  font-family:'Montserrat',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.2em;
+  font-family:var(--ui);font-weight:700;font-size:10.5px;letter-spacing:.2em;
   text-transform:uppercase;color:var(--dorado);
 }
 @media (max-width:900px){.split{grid-template-columns:1fr}}
 
 /* ============================================================
-   12. FRANJA CTA
+   11. FRANJA CTA
    ============================================================ */
 .cta{position:relative;overflow:hidden;padding-block:clamp(90px,13vw,170px);text-align:center}
 .cta-bg{position:absolute;inset:0;z-index:0}
@@ -493,7 +480,7 @@ p{color:var(--gris-texto)}
 .cta h2{font-size:clamp(1.7rem,4.2vw,3.2rem);max-width:19ch;margin-inline:auto;text-wrap:balance;margin-bottom:38px;line-height:1.15}
 
 /* ============================================================
-   13. CONTACTO + FOOTER
+   12. CONTACTO + FOOTER
    ============================================================ */
 .contacto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,4vw,56px);margin-top:54px}
 .col-head{display:flex;align-items:center;gap:12px;margin-bottom:18px}
@@ -506,14 +493,14 @@ p{color:var(--gris-texto)}
 .mapa{
   margin-top:22px;border:1px solid var(--linea-suave);border-radius:14px;overflow:hidden;
   aspect-ratio:16/7;background:var(--negro-carbon);display:grid;place-items:center;
-  font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:.24em;color:rgba(201,162,39,.5);text-transform:uppercase;
+  font-family:var(--ui);font-size:10px;letter-spacing:.24em;color:rgba(201,162,39,.5);text-transform:uppercase;
 }
 @media (max-width:860px){.contacto-grid{grid-template-columns:1fr}}
 
 .foot{background:var(--negro);padding-block:56px;text-align:center;border-top:1px solid var(--linea-suave)}
-.foot img.logo{width:74px;height:74px;border-radius:50%;object-fit:cover;border:1px solid var(--linea);margin-inline:auto}
-.foot .fname{font-family:'Montserrat',sans-serif;font-weight:900;font-size:16px;letter-spacing:.24em;margin-top:20px}
-.foot .ftag{font-family:'Montserrat',sans-serif;font-weight:700;font-size:9.5px;letter-spacing:.28em;color:var(--dorado);margin-top:8px}
+.foot .marca{width:78px;height:78px;margin-inline:auto}
+.foot .fname{font-family:var(--ui);font-weight:700;font-size:15.5px;letter-spacing:.26em;margin-top:20px}
+.foot .ftag{font-family:var(--ui);font-weight:700;font-size:9.5px;letter-spacing:.28em;color:var(--dorado);margin-top:8px}
 .socials{display:flex;justify-content:center;gap:14px;margin:30px 0 28px}
 .socials a{
   width:46px;height:46px;border-radius:50%;border:1px solid var(--linea);display:grid;place-items:center;
@@ -521,6 +508,47 @@ p{color:var(--gris-texto)}
 }
 .socials a:hover{background:var(--dorado);color:var(--negro);transform:translateY(-3px)}
 .copy{font-size:12px;color:#6b6b6b;letter-spacing:.06em;padding-top:24px;border-top:1px solid var(--linea-suave);max-width:520px;margin-inline:auto}
+
+/* ============================================================
+   13. MOVIMIENTO
+   ============================================================ */
+/* barra de progreso de lectura */
+.progreso{position:fixed;top:0;left:0;right:0;height:2px;z-index:101;background:var(--dorado);transform:scaleX(0);transform-origin:0 50%;will-change:transform}
+
+/* el navbar se retrae al bajar y reaparece al subir */
+.nav{transition:background var(--t),border-color var(--t),transform .5s var(--ease)}
+.nav.oculto{transform:translateY(-100%)}
+
+/* hero: entrada del título por líneas */
+.ln{display:block;overflow:hidden;padding-bottom:.04em}
+.ln > span{display:block;transform:translateY(110%);transition:transform 1.1s var(--ease);transition-delay:var(--d,0ms)}
+body.cargado .ln > span{transform:none}
+
+/* parallax de fondos */
+.hero-bg img,.cta-bg img{position:absolute;top:-8%;left:0;height:116%;will-change:transform}
+
+/* ticker */
+.ticker{overflow:hidden;border-block:1px solid var(--linea-suave);background:var(--negro);padding-block:19px}
+.ticker-track{display:flex;align-items:center;gap:30px;width:max-content;animation:desliz 42s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker span{
+  font-family:var(--ui);font-weight:700;font-size:11.5px;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--gris-texto);white-space:nowrap;
+}
+.ticker span:nth-child(4n+1){color:var(--dorado)}
+.ticker i{display:block;width:5px;height:5px;border-radius:50%;background:var(--dorado);opacity:.55;flex:none}
+@keyframes desliz{to{transform:translateX(calc(-50% - 15px))}}
+
+/* esquemas: el dibujo se arma capa por capa */
+.esquema svg > *{opacity:0;transform:translateY(12px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.esquema.in svg > *{opacity:1;transform:none}
+
+/* galería: revelado tipo cortina */
+.gal-item{clip-path:inset(0 0 100% 0);transition:clip-path 1.1s var(--ease),border-color var(--t)}
+.gal-item.in{clip-path:inset(0 0 0 0)}
+
+/* cifras que cuentan */
+.fig .n{font-variant-numeric:tabular-nums}
 
 /* ============================================================
    14. WHATSAPP FLOTANTE
@@ -541,25 +569,32 @@ p{color:var(--gris-texto)}
   position:absolute;right:74px;top:50%;transform:translateY(-50%) translateX(8px);
   background:var(--negro);border:1px solid var(--linea);color:var(--dorado);
   padding:10px 18px;border-radius:999px;white-space:nowrap;
-  font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:.1em;
+  font-family:var(--ui);font-weight:700;font-size:11px;letter-spacing:.1em;
   opacity:0;visibility:hidden;transition:opacity var(--t),transform var(--t),visibility var(--t);
 }
 .wa:hover .wa-tip{opacity:1;visibility:visible;transform:translateY(-50%) translateX(0)}
 @media (max-width:900px){.wa{width:54px;height:54px;right:16px;bottom:16px}.wa-tip{display:none}}
 </style>
 
-<noscript><style>.reveal{opacity:1;transform:none}.acc-a{max-height:none}</style></noscript>
+<noscript><style>.reveal{opacity:1;transform:none}.acc-a{max-height:none}.ln > span{transform:none}.gal-item{clip-path:none}.esquema svg > *{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
 
 <!-- ============================================================
      NAVBAR
      ============================================================ -->
+<div class="progreso" id="progreso" aria-hidden="true"></div>
+
 <header class="nav" id="nav">
   <div class="wrap">
     <a href="#inicio" class="brand" aria-label="Deck Solutions - Inicio">
-      <!-- FOTO: logo circular (triángulo dorado sobre negro) — assets/logo.png -->
-      <img src="assets/logo.png" alt="Logo Deck Solutions" width="44" height="44">
+      <span class="marca" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="30.6" stroke="currentColor" stroke-width="1.3" opacity=".5"/>
+          <path d="M32 15.5 49.5 46.5h-35z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/>
+          <path d="M32 29.5 39 41.5H25z" fill="currentColor" opacity=".9"/>
+        </svg>
+      </span>
       <span>
         <span class="name">DECK SOLUTIONS</span>
         <span class="tag">ESPACIOS QUE SUMAN VIDA</span>
@@ -588,7 +623,7 @@ p{color:var(--gris-texto)}
   <a href="#trabajo">Nuestro trabajo</a>
   <a href="#contacto">Contacto</a>
   <a class="btn btn-primary js-wa" href="#">Solicitá tu presupuesto <span class="arrow">&rarr;</span></a>
-  <span class="menu-foot">MAR DEL PLATA · ARGENTINA</span>
+  <span class="menu-foot">CÓRDOBA · ARGENTINA</span>
 </div>
 
 <!-- ============================================================
@@ -596,15 +631,17 @@ p{color:var(--gris-texto)}
      ============================================================ -->
 <section class="hero" id="inicio">
   <div class="hero-bg">
-    <!-- FOTO: deck instalado de noche, luz cálida rebotando en la pared — assets/hero.jpg -->
-    <img src="assets/hero.jpg" alt="Deck cubre piscinas iluminado de noche" fetchpriority="high" width="1920" height="1080">
+    <img src="assets/deck-noche.jpg"
+         srcset="assets/deck-noche-800.jpg 800w, assets/deck-noche.jpg 967w" sizes="100vw"
+         alt="Deck cubre piscinas cerrado e iluminado de noche" fetchpriority="high" width="967" height="1280"
+         data-par="70">
   </div>
 
   <div class="wrap">
     <p class="eyebrow hero-eyebrow reveal">Mucho más que un cubre piscinas</p>
-    <h1 class="reveal" style="--d:100ms">
-      <span class="grad-text">100%</span>
-      <span class="l2">TRANSITABLE</span>
+    <h1>
+      <span class="ln"><span class="grad-text" style="--d:180ms">100%</span></span>
+      <span class="ln l2"><span style="--d:300ms">TRANSITABLE</span></span>
     </h1>
     <div class="rule reveal" style="--d:200ms"></div>
     <p class="sub reveal" style="--d:280ms">Transitable <b>·</b> Estético <b>·</b> Seguro</p>
@@ -626,66 +663,42 @@ p{color:var(--gris-texto)}
   </a>
 </section>
 
-<!-- ============================================================
-     2. FRANJA DE VIDEOS (REELS)
-     ============================================================ -->
-<section class="reels bg-carbon" aria-label="Videos de instalaciones">
-  <div class="wrap">
-    <div class="reels-head reveal">
-      <p class="eyebrow">En movimiento</p>
-      <p>Mirá cómo se abre, se cierra y se camina sobre nuestros decks.</p>
-    </div>
-
-    <div class="reel-grid">
-      <!-- VIDEO 1: apertura del deck corredizo (9:16) -->
-      <div class="reel reveal" style="--d:0ms">
-        <video preload="none" playsinline muted loop poster="assets/reel-1.jpg">
-          <!-- <source src="assets/reel-1.mp4" type="video/mp4"> -->
-        </video>
-        <button class="reel-play" aria-label="Reproducir video">
-          <svg width="20" height="22" viewBox="0 0 20 22" fill="currentColor"><path d="M0 1.6v18.8c0 1.3 1.4 2 2.5 1.3l15.4-9.4c1-.6 1-2.1 0-2.7L2.5.3C1.4-.4 0 .3 0 1.6z"/></svg>
-        </button>
-        <span class="reel-cap">Apertura del deck</span>
-      </div>
-
-      <!-- VIDEO 2: caminando sobre el deck cerrado (9:16) -->
-      <div class="reel reveal" style="--d:90ms">
-        <video preload="none" playsinline muted loop poster="assets/reel-2.jpg">
-          <!-- <source src="assets/reel-2.mp4" type="video/mp4"> -->
-        </video>
-        <button class="reel-play" aria-label="Reproducir video">
-          <svg width="20" height="22" viewBox="0 0 20 22" fill="currentColor"><path d="M0 1.6v18.8c0 1.3 1.4 2 2.5 1.3l15.4-9.4c1-.6 1-2.1 0-2.7L2.5.3C1.4-.4 0 .3 0 1.6z"/></svg>
-        </button>
-        <span class="reel-cap">100% transitable</span>
-      </div>
-
-      <!-- VIDEO 3: detalle de la estructura de acero (9:16) -->
-      <div class="reel reveal" style="--d:180ms">
-        <video preload="none" playsinline muted loop poster="assets/reel-3.jpg">
-          <!-- <source src="assets/reel-3.mp4" type="video/mp4"> -->
-        </video>
-        <button class="reel-play" aria-label="Reproducir video">
-          <svg width="20" height="22" viewBox="0 0 20 22" fill="currentColor"><path d="M0 1.6v18.8c0 1.3 1.4 2 2.5 1.3l15.4-9.4c1-.6 1-2.1 0-2.7L2.5.3C1.4-.4 0 .3 0 1.6z"/></svg>
-        </button>
-        <span class="reel-cap">Acero inoxidable</span>
-      </div>
-
-      <!-- VIDEO 4: patio terminado de noche (9:16) -->
-      <div class="reel reveal" style="--d:270ms">
-        <video preload="none" playsinline muted loop poster="assets/reel-4.jpg">
-          <!-- <source src="assets/reel-4.mp4" type="video/mp4"> -->
-        </video>
-        <button class="reel-play" aria-label="Reproducir video">
-          <svg width="20" height="22" viewBox="0 0 20 22" fill="currentColor"><path d="M0 1.6v18.8c0 1.3 1.4 2 2.5 1.3l15.4-9.4c1-.6 1-2.1 0-2.7L2.5.3C1.4-.4 0 .3 0 1.6z"/></svg>
-        </button>
-        <span class="reel-cap">El patio, de noche</span>
-      </div>
-    </div>
+<!-- Ticker -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+      <span>100% transitable</span>
+      <i></i>
+      <span>Hecho a medida</span>
+      <i></i>
+      <span>Acero inoxidable</span>
+      <i></i>
+      <span>Eucalipto y Grandis</span>
+      <i></i>
+      <span>Seguridad para chicos y mascotas</span>
+      <i></i>
+      <span>Recuperá tu patio</span>
+      <i></i>
+      <span>Córdoba Capital</span>
+      <i></i>
+      <span>100% transitable</span>
+      <i></i>
+      <span>Hecho a medida</span>
+      <i></i>
+      <span>Acero inoxidable</span>
+      <i></i>
+      <span>Eucalipto y Grandis</span>
+      <i></i>
+      <span>Seguridad para chicos y mascotas</span>
+      <i></i>
+      <span>Recuperá tu patio</span>
+      <i></i>
+      <span>Córdoba Capital</span>
+      <i></i>
   </div>
-</section>
+</div>
 
 <!-- ============================================================
-     3. NOSOTROS + ACORDEÓN
+     2. NOSOTROS + ACORDEÓN
      ============================================================ -->
 <section class="sec bg-carbon" id="nosotros">
   <div class="wrap">
@@ -737,7 +750,7 @@ p{color:var(--gris-texto)}
 </section>
 
 <!-- ============================================================
-     4. BENEFICIOS
+     3. BENEFICIOS
      ============================================================ -->
 <section class="sec" aria-label="Beneficios">
   <div class="wrap">
@@ -788,7 +801,7 @@ p{color:var(--gris-texto)}
 </section>
 
 <!-- ============================================================
-     5. EL SISTEMA
+     4. EL SISTEMA
      ============================================================ -->
 <section class="sec bg-carbon" id="sistema">
   <div class="wrap">
@@ -816,9 +829,56 @@ p{color:var(--gris-texto)}
             <span><b>Paños de goma.</b> Sobre la estructura metálica se colocan paños de goma de <b>~3 mm de espesor</b>, de aproximadamente <b>1 metro de longitud</b> cada uno, fabricados según el ancho total de la piscina. Conforman la base sobre la que se fija el revestimiento de madera.</span></li>
         </ul>
       </div>
-      <figure class="step-img reveal" style="--d:120ms">
-        <!-- FOTO: estructura de caños de acero inoxidable apoyada sobre el borde de la pileta — assets/sistema-01.jpg -->
-        <img src="assets/sistema-01.jpg" alt="Estructura de acero inoxidable del cubre piscinas" loading="lazy" width="900" height="675">
+      <figure class="esquema reveal" style="--d:120ms">
+        <figcaption>Corte del sistema · capas</figcaption>
+        <svg viewBox="0 0 600 392" role="img" aria-label="Corte del sistema: tablas de deck sobre paño de goma, sobre caño de acero inoxidable apoyado con planchuelas en el borde de la piscina">
+          <rect x="0" y="246" width="112" height="146" fill="#111111"/>
+          <rect x="488" y="246" width="112" height="146" fill="#111111"/>
+          <path d="M0 246h112M488 246h112" stroke="#333333" stroke-width="1.5"/>
+          <rect x="112" y="264" width="376" height="128" fill="#0A1316"/>
+          <path d="M136 296q22-9 44 0t44 0 44 0 44 0 44 0 44 0" fill="none" stroke="#1D323A" stroke-width="1.6"/>
+          <path d="M136 326q22-9 44 0t44 0 44 0 44 0 44 0 44 0" fill="none" stroke="#16262C" stroke-width="1.4"/>
+          <text x="300" y="366" text-anchor="middle" fill="#3B4B51" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="13" letter-spacing="4">PISCINA</text>
+
+          <path d="M112 78v162M488 78v162" stroke="#C9A227" stroke-width="1" stroke-dasharray="4 7" opacity=".26"/>
+
+          <g>
+          <rect x="66" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="92" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="118" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="144" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="170" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="196" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="222" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="248" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="274" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="300" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="326" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="352" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="378" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="404" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="430" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="456" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="482" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="508" y="50" width="20" height="24" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          </g>
+          <rect x="88" y="120" width="424" height="14" rx="3" fill="#2C2C2C" stroke="#484848" stroke-width="1"/>
+          <rect x="98" y="178" width="404" height="32" rx="3" fill="#171717" stroke="#C9A227" stroke-width="1.6"/>
+          <rect x="104" y="184" width="392" height="20" rx="2" fill="none" stroke="#C9A227" stroke-width="1" opacity=".32"/>
+          <rect x="62" y="206" width="42" height="9" rx="2" fill="#C9A227"/>
+          <rect x="496" y="206" width="42" height="9" rx="2" fill="#C9A227"/>
+
+          <g><circle cx="32" cy="62" r="13" fill="#0D0D0D" stroke="#C9A227" stroke-width="1"/><text x="32" y="62" text-anchor="middle" dy=".35em" fill="#C9A227" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="12">1</text></g>
+          <g><circle cx="32" cy="127" r="13" fill="#0D0D0D" stroke="#C9A227" stroke-width="1"/><text x="32" y="127" text-anchor="middle" dy=".35em" fill="#C9A227" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="12">2</text></g>
+          <g><circle cx="32" cy="194" r="13" fill="#0D0D0D" stroke="#C9A227" stroke-width="1"/><text x="32" y="194" text-anchor="middle" dy=".35em" fill="#C9A227" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="12">3</text></g>
+          <g><circle cx="568" cy="211" r="13" fill="#0D0D0D" stroke="#C9A227" stroke-width="1"/><text x="568" y="211" text-anchor="middle" dy=".35em" fill="#C9A227" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="12">4</text></g>
+        </svg>
+        <ul class="leyenda">
+          <li><span class="num">1</span><span><b>Tablas de deck</b>Eucalipto o Grandis, superficie visible.</span></li>
+          <li><span class="num">2</span><span><b>Paño de goma</b>~3 mm de espesor, base continua.</span></li>
+          <li><span class="num">3</span><span><b>Caño de acero inoxidable</b>50 × 30&nbsp;mm · esp. 1,6 a 2&nbsp;mm.</span></li>
+          <li><span class="num">4</span><span><b>Planchuela o uña</b>~5 mm, apoya sobre el borde de la pileta.</span></li>
+        </ul>
       </figure>
     </div>
 
@@ -846,18 +906,67 @@ p{color:var(--gris-texto)}
         <p class="eyebrow" style="margin-top:34px;margin-bottom:0">Dimensiones aproximadas</p>
         <div class="figs">
           <div class="fig">
-            <div class="n grad-text">7 <small>CM</small></div>
+            <div class="n grad-text"><span data-cuenta="7">0</span> <small>CM</small></div>
             <div class="l">Ancho de tabla</div>
           </div>
           <div class="fig">
-            <div class="n grad-text">1 <small>PULGADA</small></div>
+            <div class="n grad-text"><span data-cuenta="1">0</span> <small>PULGADA</small></div>
             <div class="l">Espesor</div>
           </div>
         </div>
       </div>
-      <figure class="step-img reveal" style="--d:120ms">
-        <!-- FOTO: detalle cercano de las tablas de deck de eucalipto/Grandis — assets/sistema-02.jpg -->
-        <img src="assets/sistema-02.jpg" alt="Tablas de deck de madera natural" loading="lazy" width="900" height="675">
+      <figure class="esquema reveal" style="--d:120ms">
+        <figcaption>Corte · voladizo y tabla</figcaption>
+        <svg viewBox="0 0 600 448" role="img" aria-label="Las tablas cubren todo el ancho de la piscina y sobresalen unos 10 cm de cada lado; detalle de una tabla de 7 cm de ancho por una pulgada de espesor">
+          <!-- cotas del voladizo -->
+          <path d="M78 78v30M130 78v30M470 78v30M522 78v30" stroke="#C9A227" stroke-width="1" stroke-dasharray="3 5" opacity=".4"/>
+          <path d="M78 92h52M470 92h52M142 92h316" stroke="#C9A227" stroke-width="1" opacity=".75"/>
+          <path d="M83 87.5 78.5 92l4.5 4.5M125 87.5l4.5 4.5-4.5 4.5M475 87.5l-4.5 4.5 4.5 4.5M517 87.5l4.5 4.5-4.5 4.5M147 87.5l-4.5 4.5 4.5 4.5M453 87.5l4.5 4.5-4.5 4.5" fill="none" stroke="#C9A227" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="104" y="72" text-anchor="middle" fill="#E8C87A" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="17">~10 cm</text>
+          <text x="496" y="72" text-anchor="middle" fill="#E8C87A" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="17">~10 cm</text>
+          <text x="300" y="72" text-anchor="middle" fill="#8A8A8A" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="12" letter-spacing="3">ANCHO DE LA PISCINA</text>
+
+          <!-- borde, agua y estructura -->
+          <rect x="0" y="158" width="130" height="112" fill="#111111"/>
+          <rect x="470" y="158" width="130" height="112" fill="#111111"/>
+          <path d="M0 158h130M470 158h130" stroke="#333333" stroke-width="1.5"/>
+          <rect x="130" y="172" width="340" height="98" fill="#0A1316"/>
+          <path d="M154 210q20-9 40 0t40 0 40 0 40 0 40 0 40 0 40 0" fill="none" stroke="#1D323A" stroke-width="1.6"/>
+          <text x="300" y="252" text-anchor="middle" fill="#3B4B51" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="12" letter-spacing="4">PISCINA</text>
+          <rect x="96" y="142" width="408" height="10" rx="2" fill="#171717" stroke="#C9A227" stroke-width="1.2"/>
+          <g>
+          <rect x="78" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="103" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="128" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="153" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="178" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="203" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="228" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="253" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="278" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="303" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="328" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="353" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="378" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="403" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="428" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="453" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="478" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          <rect x="503" y="114" width="19" height="26" rx="2.5" fill="#42301C" stroke="#6B4E2C" stroke-width="1"/>
+          </g>
+
+          <!-- detalle de tabla -->
+          <path d="M283 138 214 330M308 138l70 192" stroke="#C9A227" stroke-width="1" stroke-dasharray="4 6" opacity=".28"/>
+          <text x="60" y="322" fill="#8A8A8A" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="12" letter-spacing="3">DETALLE DE TABLA</text>
+          <rect x="214" y="334" width="164" height="62" rx="6" fill="#42301C" stroke="#6B4E2C" stroke-width="1.4"/>
+          <path d="M230 350h132M238 365h116M228 380h140" stroke="#6B4E2C" stroke-width="1" opacity=".55"/>
+          <path d="M214 416h164" stroke="#C9A227" stroke-width="1" opacity=".75"/>
+          <path d="M219 411.5l-4.5 4.5 4.5 4.5M373 411.5l4.5 4.5-4.5 4.5" fill="none" stroke="#C9A227" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="296" y="440" text-anchor="middle" fill="#E8C87A" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="17">7 cm</text>
+          <path d="M398 334v62" stroke="#C9A227" stroke-width="1" opacity=".75"/>
+          <path d="M393.5 339 398 334.5l4.5 4.5M393.5 391l4.5 4.5 4.5-4.5" fill="none" stroke="#C9A227" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="412" y="371" fill="#E8C87A" font-family="Archivo,Helvetica,sans-serif" font-weight="700" font-size="17">1 pulgada</text>
+        </svg>
       </figure>
     </div>
 
@@ -914,7 +1023,7 @@ p{color:var(--gris-texto)}
 </section>
 
 <!-- ============================================================
-     6. GALERÍA — NUESTRO TRABAJO
+     5. GALERÍA — NUESTRO TRABAJO
      ============================================================ -->
 <section class="sec" id="trabajo">
   <div class="wrap">
@@ -925,40 +1034,28 @@ p{color:var(--gris-texto)}
     </div>
 
     <div class="gal" id="galeria">
-      <!-- FOTO: deck cerrado sobre pileta, vista general de día — assets/obra-1.jpg -->
-      <figure class="gal-item tall reveal" data-cap="Mar del Plata · Deck sobre pileta de 3×6">
-        <img src="assets/obra-1.jpg" alt="Deck cubre piscinas cerrado en Mar del Plata" loading="lazy" width="800" height="1000">
-        <figcaption class="gal-cap"><i>Obra 01</i>Mar del Plata · Deck sobre pileta de 3×6</figcaption>
+      <!-- FOTO CLIENTE: deck cerrado de día, con la pileta asomando al fondo -->
+      <figure class="gal-item tall reveal" data-cap="Deck corredizo cerrado sobre la pileta">
+        <img src="assets/deck-pileta.jpg" srcset="assets/deck-pileta-800.jpg 800w, assets/deck-pileta.jpg 975w"
+             sizes="(max-width:820px) 92vw, 38vw" alt="Deck cubre piscinas cerrado sobre la pileta"
+             loading="lazy" width="975" height="1280">
+        <figcaption class="gal-cap"><i>01</i>Deck corredizo cerrado sobre la pileta</figcaption>
       </figure>
 
-      <!-- FOTO: deck a medio abrir mostrando el agua — assets/obra-2.jpg -->
-      <figure class="gal-item reveal" style="--d:70ms" data-cap="Sistema corredizo · Apertura manual">
-        <img src="assets/obra-2.jpg" alt="Deck corredizo a medio abrir" loading="lazy" width="800" height="600">
-        <figcaption class="gal-cap"><i>Obra 02</i>Sistema corredizo · Apertura manual</figcaption>
+      <!-- FOTO CLIENTE: deck de gran superficie frente a la casa, atardecer -->
+      <figure class="gal-item reveal" style="--d:70ms" data-cap="Gran superficie en madera natural, a nivel del patio">
+        <img src="assets/deck-casa.jpg" srcset="assets/deck-casa-800.jpg 800w, assets/deck-casa.jpg 1280w"
+             sizes="(max-width:820px) 92vw, 55vw" alt="Deck de madera natural de gran superficie frente a la casa"
+             loading="lazy" width="1280" height="853">
+        <figcaption class="gal-cap"><i>02</i>Gran superficie en madera natural</figcaption>
       </figure>
 
-      <!-- FOTO: gente caminando / mesa sobre el deck — assets/obra-3.jpg -->
-      <figure class="gal-item reveal" style="--d:140ms" data-cap="Patio recuperado · Superficie transitable">
-        <img src="assets/obra-3.jpg" alt="Patio con deck transitable sobre la piscina" loading="lazy" width="800" height="600">
-        <figcaption class="gal-cap"><i>Obra 03</i>Patio recuperado · Superficie transitable</figcaption>
-      </figure>
-
-      <!-- FOTO: detalle del borde con las planchuelas apoyadas — assets/obra-4.jpg -->
-      <figure class="gal-item reveal" style="--d:210ms" data-cap="Detalle de apoyo sobre el borde de la pileta">
-        <img src="assets/obra-4.jpg" alt="Detalle del apoyo del deck sobre el borde" loading="lazy" width="800" height="600">
-        <figcaption class="gal-cap"><i>Obra 04</i>Detalle de apoyo sobre el borde</figcaption>
-      </figure>
-
-      <!-- FOTO: deck iluminado de noche — assets/obra-5.jpg -->
-      <figure class="gal-item tall reveal" style="--d:280ms" data-cap="Iluminación nocturna · Deck de eucalipto">
-        <img src="assets/obra-5.jpg" alt="Deck iluminado de noche" loading="lazy" width="800" height="1000">
-        <figcaption class="gal-cap"><i>Obra 05</i>Iluminación nocturna · Deck de eucalipto</figcaption>
-      </figure>
-
-      <!-- FOTO: vista aérea del patio con el deck cerrado — assets/obra-6.jpg -->
-      <figure class="gal-item reveal" style="--d:350ms" data-cap="Vista aérea · Integración con el entorno">
-        <img src="assets/obra-6.jpg" alt="Vista aérea del deck cubre piscinas" loading="lazy" width="800" height="600">
-        <figcaption class="gal-cap"><i>Obra 06</i>Vista aérea · Integración con el entorno</figcaption>
+      <!-- FOTO CLIENTE: el mismo deck de noche, con reposeras encima -->
+      <figure class="gal-item reveal" style="--d:140ms" data-cap="El patio de noche · superficie 100% transitable">
+        <img src="assets/deck-noche.jpg" srcset="assets/deck-noche-800.jpg 800w, assets/deck-noche.jpg 967w"
+             sizes="(max-width:820px) 92vw, 55vw" alt="Deck cerrado de noche con reposeras encima"
+             loading="lazy" width="967" height="1280" style="object-position:center 44%">
+        <figcaption class="gal-cap"><i>03</i>El patio de noche · 100% transitable</figcaption>
       </figure>
     </div>
   </div>
@@ -980,14 +1077,16 @@ p{color:var(--gris-texto)}
 </div>
 
 <!-- ============================================================
-     7. BLOQUE DESTACADO
+     6. BLOQUE DESTACADO
      ============================================================ -->
 <section class="sec bg-carbon" aria-label="Cubre piscinas a medida">
   <div class="wrap">
     <div class="split">
       <figure class="split-img reveal">
-        <!-- FOTO: deck cerrado, foto grande vertical del producto terminado — assets/medida.jpg -->
-        <img src="assets/medida.jpg" alt="Cubre piscinas de madera fabricado a medida" loading="lazy" width="900" height="1125">
+        <!-- FOTO CLIENTE: deck cerrado sobre la pileta -->
+        <img src="assets/deck-pileta.jpg" srcset="assets/deck-pileta-800.jpg 800w, assets/deck-pileta.jpg 975w"
+             sizes="(max-width:900px) 92vw, 46vw" alt="Cubre piscinas de madera fabricado a medida"
+             loading="lazy" width="975" height="1280" style="object-position:center 58%">
         <span class="split-badge">Fabricación propia</span>
       </figure>
 
@@ -1009,12 +1108,13 @@ p{color:var(--gris-texto)}
 </section>
 
 <!-- ============================================================
-     8. FRANJA CTA
+     7. FRANJA CTA
      ============================================================ -->
 <section class="cta">
   <div class="cta-bg">
-    <!-- FOTO: deck de día, plano amplio del patio — assets/cta.jpg -->
-    <img src="assets/cta.jpg" alt="" loading="lazy" width="1920" height="1080">
+    <!-- FOTO CLIENTE: deck de gran superficie al atardecer -->
+    <img src="assets/deck-casa.jpg" srcset="assets/deck-casa-800.jpg 800w, assets/deck-casa.jpg 1280w"
+         sizes="100vw" alt="" loading="lazy" width="1280" height="853" data-par="80">
   </div>
   <div class="wrap">
     <p class="eyebrow center reveal">Deck Solutions</p>
@@ -1026,7 +1126,7 @@ p{color:var(--gris-texto)}
 </section>
 
 <!-- ============================================================
-     9. CONTACTO
+     8. CONTACTO
      ============================================================ -->
 <section class="sec bg-gris" id="contacto">
   <div class="wrap">
@@ -1042,12 +1142,12 @@ p{color:var(--gris-texto)}
           <span class="ci"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
           <h3>Ubicación</h3>
         </div>
-        <p class="line">Mar del Plata, Buenos Aires.</p>
+        <p class="line">Córdoba Capital, Córdoba.</p>
         <p class="line">Trabajamos en la ciudad y alrededores.</p>
-        <!-- MAPA: reemplazar por el iframe de Google Maps de Mar del Plata
-        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="220" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Mar del Plata"></iframe>
+        <!-- MAPA: reemplazar por el iframe de Google Maps de Córdoba Capital
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="220" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Córdoba Capital"></iframe>
         -->
-        <div class="mapa">Mapa · Mar del Plata</div>
+        <div class="mapa">Mapa · Córdoba Capital</div>
       </div>
 
       <div class="reveal" style="--d:100ms">
@@ -1055,7 +1155,8 @@ p{color:var(--gris-texto)}
           <span class="ci"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
           <h3>Contacto</h3>
         </div>
-        <div class="line"><a href="https://wa.me/5492231234567?text=Hola!%20Quisiera%20consultar%20por%20un%20deck%20cubre%20piscinas" target="_blank" rel="noopener">WhatsApp · +54 9 223 123-4567</a></div>
+        <div class="line"><a href="https://wa.me/5493515090542?text=Hola!%20Quisiera%20consultar%20por%20un%20deck%20cubre%20piscinas" target="_blank" rel="noopener">WhatsApp · +54 9 3515 09-0542</a></div>
+        <div class="line"><a href="https://wa.me/5492944143318?text=Hola!%20Quisiera%20consultar%20por%20un%20deck%20cubre%20piscinas" target="_blank" rel="noopener">WhatsApp · +54 9 2944 14-3318</a></div>
         <div class="line"><a href="https://instagram.com/decksolutions" target="_blank" rel="noopener">Instagram · @decksolutions</a></div>
         <div class="line"><a href="mailto:info@decksolutions.com.ar">info@decksolutions.com.ar</a></div>
       </div>
@@ -1074,12 +1175,17 @@ p{color:var(--gris-texto)}
 </section>
 
 <!-- ============================================================
-     10. FOOTER
+     9. FOOTER
      ============================================================ -->
 <footer class="foot">
   <div class="wrap">
-    <!-- FOTO: logo circular — assets/logo.png -->
-    <img class="logo" src="assets/logo.png" alt="Deck Solutions" loading="lazy" width="74" height="74">
+    <span class="marca" aria-hidden="true">
+      <svg viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="32" r="30.6" stroke="currentColor" stroke-width="1.3" opacity=".5"/>
+        <path d="M32 15.5 49.5 46.5h-35z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/>
+        <path d="M32 29.5 39 41.5H25z" fill="currentColor" opacity=".9"/>
+      </svg>
+    </span>
     <p class="fname">DECK SOLUTIONS</p>
     <p class="ftag">ESPACIOS QUE SUMAN VIDA</p>
 
@@ -1100,7 +1206,7 @@ p{color:var(--gris-texto)}
 </footer>
 
 <!-- ============================================================
-     11. WHATSAPP FLOTANTE
+     10. WHATSAPP FLOTANTE
      ============================================================ -->
 <a class="wa js-wa" href="#" aria-label="Escribinos por WhatsApp">
   <span class="wa-tip">¿Consultas? Escribinos</span>
@@ -1112,20 +1218,52 @@ p{color:var(--gris-texto)}
   'use strict';
 
   /* ---------- WhatsApp: un solo link para todos los CTA ---------- */
-  var WA = 'https://wa.me/5492231234567?text=Hola!%20Quisiera%20consultar%20por%20un%20deck%20cubre%20piscinas';
+  var WA = 'https://wa.me/5493515090542?text=Hola!%20Quisiera%20consultar%20por%20un%20deck%20cubre%20piscinas';
   document.querySelectorAll('.js-wa').forEach(function (el) {
     el.href = WA;
     el.target = '_blank';
     el.rel = 'noopener';
   });
 
-  /* ---------- Navbar: se opaca al scrollear ---------- */
+  /* ---------- Navbar, barra de progreso y parallax ---------- */
   var nav = document.getElementById('nav');
-  var onScroll = function () {
-    nav.classList.toggle('stuck', window.scrollY > 40);
+  var barra = document.getElementById('progreso');
+  var pars = Array.prototype.slice.call(document.querySelectorAll('[data-par]'));
+  var previo = 0, pidiendo = false;
+  var quieto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var pintar = function () {
+    pidiendo = false;
+    var y = window.scrollY;
+    var alto = document.documentElement.scrollHeight - window.innerHeight;
+
+    nav.classList.toggle('stuck', y > 40);
+    nav.classList.toggle('oculto', y > previo && y > 460 && !menu.classList.contains('open'));
+    barra.style.transform = 'scaleX(' + (alto > 0 ? Math.min(y / alto, 1) : 0) + ')';
+    previo = y;
+
+    if (!quieto) {
+      var vh = window.innerHeight;
+      pars.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.bottom < -120 || r.top > vh + 120) return;
+        var centro = (r.top + r.height / 2 - vh / 2) / vh;
+        el.style.transform = 'translate3d(0,' + (centro * parseFloat(el.dataset.par)).toFixed(1) + 'px,0)';
+      });
+    }
   };
-  onScroll();
+  var onScroll = function () {
+    if (!pidiendo) { pidiendo = true; requestAnimationFrame(pintar); }
+  };
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+
+  /* ---------- Arranque: recién con las fuentes listas ---------- */
+  var arrancar = function () {
+    requestAnimationFrame(function () { document.body.classList.add('cargado'); pintar(); });
+  };
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(arrancar); } else { arrancar(); }
+  setTimeout(arrancar, 1200);
 
   /* ---------- Menú mobile ---------- */
   var burger = document.getElementById('burger');
@@ -1170,6 +1308,26 @@ p{color:var(--gris-texto)}
     });
   });
 
+  /* ---------- Esquemas: las capas entran escalonadas ---------- */
+  document.querySelectorAll('.esquema svg').forEach(function (svg) {
+    Array.prototype.slice.call(svg.children).forEach(function (el, i) {
+      el.style.transitionDelay = (i * 55) + 'ms';
+    });
+  });
+
+  /* ---------- Cifras que cuentan ---------- */
+  var contar = function (el) {
+    var fin = parseFloat(el.dataset.cuenta), t0 = null, dur = 1100;
+    if (quieto) { el.textContent = fin; return; }
+    var paso = function (t) {
+      if (!t0) t0 = t;
+      var k = Math.min((t - t0) / dur, 1);
+      el.textContent = Math.round(fin * (1 - Math.pow(1 - k, 3)));
+      if (k < 1) requestAnimationFrame(paso);
+    };
+    requestAnimationFrame(paso);
+  };
+
   /* ---------- Reveal on scroll ---------- */
   var reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
@@ -1177,6 +1335,7 @@ p{color:var(--gris-texto)}
       entries.forEach(function (e) {
         if (e.isIntersecting) {
           e.target.classList.add('in');
+          e.target.querySelectorAll('[data-cuenta]').forEach(contar);
           io.unobserve(e.target);
         }
       });
@@ -1184,26 +1343,8 @@ p{color:var(--gris-texto)}
     reveals.forEach(function (el) { io.observe(el); });
   } else {
     reveals.forEach(function (el) { el.classList.add('in'); });
+    document.querySelectorAll('[data-cuenta]').forEach(contar);
   }
-
-  /* ---------- Reels: play / pause ---------- */
-  document.querySelectorAll('.reel').forEach(function (reel) {
-    var video = reel.querySelector('video');
-    reel.querySelector('.reel-play').addEventListener('click', function () {
-      // Sin <source> cargado los videos no reproducen: dejá los archivos en assets/
-      if (!video || !video.querySelector('source')) return;
-      document.querySelectorAll('.reel video').forEach(function (v) {
-        if (v !== video) { v.pause(); v.closest('.reel').classList.remove('playing'); }
-      });
-      reel.classList.add('playing');
-      var p = video.play();
-      if (p && p.catch) p.catch(function () { reel.classList.remove('playing'); });
-    });
-    if (video) {
-      video.addEventListener('click', function () { video.pause(); reel.classList.remove('playing'); });
-      video.addEventListener('pause', function () { reel.classList.remove('playing'); });
-    }
-  });
 
   /* ---------- Lightbox de la galería ---------- */
   var fotos = Array.prototype.slice.call(document.querySelectorAll('#galeria .gal-item'));

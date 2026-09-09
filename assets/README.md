@@ -1,30 +1,43 @@
 # Assets — Deck Solutions
 
-Todas las imágenes de esta carpeta son **placeholders generados**. Reemplazalas por las fotos
-reales manteniendo exactamente el mismo nombre de archivo y una relación de aspecto similar.
+Las tres fotos del cliente, optimizadas (realce suave de contraste/color/nitidez, JPEG
+progresivo de calidad 84). De cada una hay una versión grande y una de 800 px que se
+sirve por `srcset` en pantallas chicas.
 
-| Archivo | Uso | Proporción sugerida |
-|---|---|---|
-| `logo.png` | Logo circular (navbar + footer + favicon) | 1:1 · 512×512 |
-| `hero.jpg` | Fondo del hero + Open Graph. Deck de noche con la luz cálida en la pared | 16:9 · 1920×1080 |
-| `reel-1..4.jpg` | Poster de los 4 reels verticales | 9:16 · 900×1600 |
-| `sistema-01.jpg` | Estructura de caños de acero inoxidable | 4:3 |
-| `sistema-02.jpg` | Detalle de las tablas de deck (eucalipto / Grandis) | 4:3 |
-| `obra-1..6.jpg` | Galería "Nuestro trabajo" (1 y 5 son verticales) | 4:5 y 4:3 |
-| `medida.jpg` | Bloque "Fabricados a medida", foto vertical del deck cerrado | 4:5 |
-| `cta.jpg` | Fondo de la franja CTA, deck de día | 16:9 |
+| Archivo | Dónde se usa |
+|---|---|
+| `deck-noche.jpg` | Fondo del hero (con parallax), tercera foto de la galería y Open Graph |
+| `deck-pileta.jpg` | Primera foto de la galería (vertical grande) y bloque "Fabricados a medida" |
+| `deck-casa.jpg` | Segunda foto de la galería y fondo de la franja CTA (con parallax) |
 
-## Videos de los reels
+Originales en `~/Downloads` (`WhatsApp Image 2026-09-02 at 5.08.42 PM (3)/(4).jpeg` y
+`WhatsApp Image 2026-09-07 at 11.44.38 AM.jpeg`).
 
-Los `<video>` de la franja de reels tienen el `<source>` comentado en `index.html`.
-Poné los archivos como `assets/reel-1.mp4` … `reel-4.mp4` (vertical 9:16, sin audio) y
-descomentá la línea correspondiente:
+## Sin imágenes inventadas
 
-```html
-<source src="assets/reel-1.mp4" type="video/mp4">
-```
+- No hay videos ni fotos de relleno: la franja de reels se eliminó.
+- El logo es un SVG dibujado en línea (círculo + triángulo dorado), no un archivo. Si el
+  cliente pasa el logo real, reemplazá los dos `<span class="marca">` del `index.html`
+  (navbar y footer) por un `<img>` y actualizá el favicon del `<head>`.
+- Los dos bloques técnicos de "El sistema" usan esquemas SVG dibujados a medida (corte de
+  capas y corte del voladizo + detalle de tabla), no fotos.
 
-## Otros pendientes de contenido real
-- Teléfono de WhatsApp: hoy está `+54 9 223 123-4567` (constante `WA` en el `<script>` y links del footer/contacto).
-- Email: `info@decksolutions.com.ar`.
-- Mapa: el `<iframe>` de Google Maps está comentado en la sección Contacto.
+## Para agregar más fotos a la galería
+
+En la sección `#trabajo`, duplicá un `<figure class="gal-item">`. Las clases: `tall` ocupa
+dos filas (para verticales), sin clase ocupa una (para apaisadas). El lightbox y el
+revelado por scroll se enganchan solos.
+
+## Datos de contacto cargados
+
+- WhatsApp principal (todos los CTA): **+54 9 3515 09-0542** → `wa.me/5493515090542`
+- Segundo WhatsApp (sección Contacto): **+54 9 2944 14-3318** → `wa.me/5492944143318`
+- Ciudad: **Córdoba Capital**
+- Email: `info@decksolutions.com.ar` — pendiente de confirmar
+- Instagram / Facebook: `@decksolutions` — pendiente de confirmar
+- Mapa: el `<iframe>` de Google Maps está comentado en la sección Contacto
+
+## Tipografía
+
+- Títulos: **Fraunces** (serif variable, ejes SOFT/WONK/opsz)
+- Interfaz y cuerpo: **Archivo**

@@ -193,8 +193,8 @@ p{color:var(--gris-texto)}
 .nav-links a::after{
   content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--dorado);transition:width var(--t);
 }
-.nav-links a:hover{color:var(--blanco)}
-.nav-links a:hover::after{width:100%}
+.nav-links a:hover,.nav-links a.activo{color:var(--blanco)}
+.nav-links a:hover::after,.nav-links a.activo::after{width:100%}
 
 .burger{display:none;width:44px;height:44px;flex-direction:column;justify-content:center;align-items:center;gap:6px;border:1px solid var(--linea);border-radius:50%;flex:none;z-index:120}
 .burger span{display:block;width:17px;height:1.5px;background:var(--dorado);transition:transform var(--t),opacity var(--t)}
@@ -209,7 +209,15 @@ p{color:var(--gris-texto)}
 }
 .menu.open{opacity:1;visibility:visible}
 .menu a:not(.btn){font-family:var(--display);font-weight:700;font-size:clamp(30px,8vw,46px);letter-spacing:-.02em;padding:10px 0;transition:color var(--t);font-variation-settings:'SOFT' 0,'WONK' 1}
-.menu a:not(.btn):hover{color:var(--dorado)}
+.menu a:not(.btn):hover,.menu a:not(.btn).activo{color:var(--dorado)}
+.menu a,.menu .menu-foot{opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease),transform .5s var(--ease),color var(--t)}
+.menu.open a,.menu.open .menu-foot{opacity:1;transform:none}
+.menu.open a:nth-child(1){transition-delay:.10s}
+.menu.open a:nth-child(2){transition-delay:.16s}
+.menu.open a:nth-child(3){transition-delay:.22s}
+.menu.open a:nth-child(4){transition-delay:.28s}
+.menu.open a:nth-child(5){transition-delay:.36s}
+.menu.open .menu-foot{transition-delay:.44s}
 .menu .btn{margin-top:26px}
 .menu .menu-foot{margin-top:34px;font-size:11px;letter-spacing:.24em;color:var(--dorado);font-family:var(--ui);font-weight:700}
 
@@ -313,7 +321,6 @@ p{color:var(--gris-texto)}
 .card h3{font-size:15px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:12px}
 .card p{font-size:14.2px}
 @media (max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:620px){.cards{grid-template-columns:1fr}}
 
 /* ============================================================
    8. EL SISTEMA
@@ -510,7 +517,72 @@ p{color:var(--gris-texto)}
 .copy{font-size:12px;color:#6b6b6b;letter-spacing:.06em;padding-top:24px;border-top:1px solid var(--linea-suave);max-width:520px;margin-inline:auto}
 
 /* ============================================================
-   13. MOVIMIENTO
+   13. MOBILE — menos densidad, más pulgar
+   ============================================================ */
+/* ficha técnica plegada: en el teléfono se muestran los dos primeros puntos */
+.ver-mas{
+  display:none;margin-top:20px;align-items:center;gap:10px;
+  font-family:var(--ui);font-weight:700;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--dorado);
+}
+.ver-mas::after{
+  content:"";width:24px;height:24px;border-radius:50%;border:1px solid var(--linea);
+  background:no-repeat center/9px 9px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C9A227' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E");
+  transition:transform var(--t);
+}
+.ver-mas.abierto::after{transform:rotate(135deg)}
+
+@media (max-width:820px){
+  .sec{padding-block:clamp(62px,11vw,88px)}
+  h2{font-size:clamp(1.95rem,8vw,2.6rem)}
+  .lead{font-size:14.8px;line-height:1.65}
+  .eyebrow{font-size:10.5px;letter-spacing:.22em;margin-bottom:18px}
+
+  /* botones a lo ancho, cómodos para el pulgar */
+  .btns{gap:10px;width:100%}
+  .btn{padding:16px 22px;font-size:11.5px;letter-spacing:.12em}
+  .btns{flex-direction:column;align-items:stretch}
+  .btns .btn{width:100%;justify-content:space-between}
+  .btn-lg{padding:17px 24px;font-size:12px}
+
+  /* beneficios: dos columnas compactas en vez de seis bloques apilados */
+  .cards{grid-template-columns:repeat(2,1fr);gap:11px;margin-top:38px}
+  .card{padding:20px 16px 18px;border-radius:14px}
+  .card-ico{width:42px;height:42px;margin-bottom:15px}
+  .card-ico svg{width:19px;height:19px}
+  .card h3{font-size:11.8px;letter-spacing:.1em;margin-bottom:7px}
+  .card p{font-size:12px;line-height:1.5}
+
+  /* ficha técnica: se pliega */
+  .step-list.plegable li:nth-child(n+3){display:none}
+  .step-list.plegable.abierta li{display:grid}
+  .ver-mas{display:inline-flex}
+
+  .step h3{font-size:1.3rem}
+  .step .sub{font-size:14px;margin-bottom:24px}
+  .esquema{padding:16px 13px}
+  .esquema figcaption{font-size:9px;margin-bottom:14px}
+  .leyenda{gap:12px;margin-top:20px;padding-top:18px}
+  .leyenda li{font-size:11.8px}
+  .cierre{padding:20px 22px;font-size:14px}
+  .ticker span{font-size:10.5px;letter-spacing:.22em}
+  .ticker-track{gap:22px}
+  .acc-q{font-size:14px;padding:19px 0}
+  .acc-a p{font-size:13.8px}
+  /* en el teléfono la galería ya muestra esta misma foto: no la repetimos */
+  .split-img{display:none}
+  .contacto-grid{gap:36px}
+  .gal{gap:12px}
+}
+
+@media (max-width:400px){
+  .cards{grid-template-columns:1fr}
+  .card{padding:22px 20px}
+  .card p{font-size:13px}
+}
+
+/* ============================================================
+   14. MOVIMIENTO
    ============================================================ */
 /* barra de progreso de lectura */
 .progreso{position:fixed;top:0;left:0;right:0;height:2px;z-index:101;background:var(--dorado);transform:scaleX(0);transform-origin:0 50%;will-change:transform}
@@ -551,7 +623,7 @@ body.cargado .ln > span{transform:none}
 .fig .n{font-variant-numeric:tabular-nums}
 
 /* ============================================================
-   14. WHATSAPP FLOTANTE
+   15. WHATSAPP FLOTANTE
    ============================================================ */
 .wa{
   position:fixed;right:22px;bottom:22px;z-index:150;
@@ -1307,6 +1379,42 @@ body.cargado .ln > span{transform:none}
       }
     });
   });
+
+  /* ---------- Ficha técnica plegable (sólo teléfono) ---------- */
+  document.querySelectorAll('.step-list').forEach(function (lista) {
+    var items = lista.children.length;
+    if (items <= 2) return;
+    lista.classList.add('plegable');
+    var btn = document.createElement('button');
+    btn.className = 'ver-mas';
+    btn.type = 'button';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.textContent = 'Ver los ' + items + ' puntos';
+    lista.parentNode.insertBefore(btn, lista.nextSibling);
+    btn.addEventListener('click', function () {
+      var abierto = lista.classList.toggle('abierta');
+      btn.classList.toggle('abierto', abierto);
+      btn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+      btn.textContent = abierto ? 'Ver menos' : 'Ver los ' + items + ' puntos';
+    });
+  });
+
+  /* ---------- Link activo según la sección ---------- */
+  var anclas = ['inicio', 'sistema', 'trabajo', 'contacto'];
+  if ('IntersectionObserver' in window) {
+    var marcar = function (id) {
+      document.querySelectorAll('.nav-links a, .menu a').forEach(function (a) {
+        a.classList.toggle('activo', a.getAttribute('href') === '#' + id);
+      });
+    };
+    var ioNav = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) marcar(e.target.id); });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    anclas.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) ioNav.observe(el);
+    });
+  }
 
   /* ---------- Esquemas: las capas entran escalonadas ---------- */
   document.querySelectorAll('.esquema svg').forEach(function (svg) {

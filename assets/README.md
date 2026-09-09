@@ -33,8 +33,10 @@ revelado por scroll se enganchan solos.
 - WhatsApp principal (todos los CTA): **+54 9 3515 09-0542** → `wa.me/5493515090542`
 - Segundo WhatsApp (sección Contacto): **+54 9 2944 14-3318** → `wa.me/5492944143318`
 - Ciudad: **Córdoba Capital**
-- Email: `info@decksolutions.com.ar` — pendiente de confirmar
-- Instagram / Facebook: `@decksolutions` — pendiente de confirmar
+- Email: **cubrepiscina.deck@gmail.com**
+- Instagram: **@cubrepisicna.deck** (tal cual lo pasó el cliente; ojo que el mail dice "cubrepiscina", verificar cuál es)
+- Facebook: sin cuenta confirmada, se quitó el ícono del footer
+- Dominio `decksolutions.com.ar` en `canonical`/`og:url`: placeholder, cambiar por el real
 - Mapa: el `<iframe>` de Google Maps está comentado en la sección Contacto
 
 ## Tipografía
